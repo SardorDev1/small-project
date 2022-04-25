@@ -1,0 +1,349 @@
+* {
+   margin: 0;
+   padding: 0;
+   outline: none;
+   box-sizing: border-box;
+}
+body {
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+}
+.container {
+   max-width: 1200px;
+   height: 100%;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+button {
+    cursor: pointer;
+}
+ /* Header 
+ =============================== */
+header.header {
+   width: 100%;
+   height: 100vh;
+   min-height: 800px;
+   background: url(img/banner.jpg) no-repeat center;
+   background-size: cover;
+   margin-bottom: 50px;
+}
+.header_content {
+   width: 70%;
+   text-align: center;
+   margin: 0 auto;
+}
+.logo {
+   width: 40%;
+   height: auto;
+   margin: 0px auto;
+}
+.logo> img {
+   width: 100%;
+   padding: 65px 0;
+}
+.header_content> h1 {
+   color: #ffffff;
+   font-size: 50px;
+   font-weight: 500;
+   text-transform: uppercase;
+   margin-bottom: 60px;
+}
+.header_content> h1> span {
+   font-weight: 900;
+}
+.control_block {
+   width: 44%;
+   margin: 0 auto;
+}
+.control_block> img{
+   width: 100%;
+   box-shadow: 2px solid #8c8c8c;
+}
+
+ /* wrapper 
+ =============================== */
+.wrapper {
+   width: 100%;
+   height: auto;
+   background-color: #fff;
+   margin-top: 240px;
+}
+ .wrapper_main {
+   width: 100%;
+   min-height: 130px;
+   display: flex;
+   justify-content: space-around;
+   position: relative;
+   margin-bottom: 100px;
+}
+.wrapper_item {
+   width: 50%;
+   display: flex;
+}
+.wrapper_item> img {
+   width: 100px;
+   height: 130px;
+   margin-right: 30px;
+}
+.wrapper_text> h3 {
+   font-size: 27px;
+   font-weight: 500;
+   line-height: 2;
+}
+.wrapper_text> p {
+   font-size: 14px;
+   padding-right: 160px;
+   line-height: 1.5;
+}
+ /* content 
+ =============================== */
+.content {
+   width: 100%;
+   background: url(img/content_bg.png) no-repeat center;
+   background-size: cover;
+   visibility: initial;
+}
+.content_item {
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+}
+.content_block {
+   width: 55%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: relative;
+   margin: 0 auto;
+   padding-top: 85px;
+}
+
+.content_block> img {
+   width: 80%;
+   position: absolute;
+   z-index: 1;
+   left: -100px;
+}
+.content_block> h3 {
+   font-size: 39px;
+   font-weight: 500;
+   color: #ffffff;
+   line-height: 2.8;
+   margin-top: 160px;
+   z-index: 2;
+}
+.content_block> p {
+   color: #ffffff;
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 1.7;
+   letter-spacing: .4px;
+   z-index: 2;
+}
+.tablet> img {
+   left: -400px;
+   top: 220px;
+}
+.tablet> p {
+   padding-left: 28%;
+}
+.tablet> h3 {
+   padding-left: 2%;
+}
+.tablet> button {
+   padding: 15px 30px;
+   color: #ffffff;
+   font-size: 27px;
+   line-height: .7;
+   border: 3px solid#ffffff;
+   border-radius: 8px;
+   background: inherit;
+   margin: 40px 0 100px;
+}
+.tablet> button:active {
+   background-color: #399462;
+}
+ /* map 
+ =============================== */
+.Map {
+   background: url(img/big_map.jpg) no-repeat center;
+   background-size: cover;
+   min-height: 635px;
+   margin-top: -20px;
+}
+.map_block {
+   min-height: 635px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.emaile {
+   width: 430px;
+   height: 430px;
+   background-color: rgba(255, 255, 255, 0.8);
+   border-radius: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.emaile> form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: end;
+}
+.emaile> form> input {
+   width: 65%;
+   height: 30px;
+   color: #abadb3;
+   margin-bottom: 15px;
+   border: 1px solid #d8d8d8;
+   padding-right: 8px;
+   text-indent: 15px;
+}
+.emaile> form> textarea {
+   max-width: 65%;
+   min-height: 65%;
+   min-height: 80px;
+   max-height: 80px;
+   margin-bottom: 35px;
+   color: #abadb3;
+   font-size: 14px;
+   line-height: 2;
+   border: 1px solid #d8d8d8;
+   text-indent: 15px;
+}
+.emaile> form> button {
+   background: url(img/email_btn.png) no-repeat center;
+   background-size: cover;
+   width: 70px;
+   height: 70px;
+   border: none;
+	margin-bottom: -60px;
+}
+
+ /* footer 
+ =============================== */
+footer {
+   width: 100%;
+   min-height: 50px;
+   background-color: #43a06d;
+ }
+.footer_p {
+   font-size: 14px;
+   color: #ffffff;
+   text-align: center;
+   line-height: 3.63;
+ }
+ /* @media 
+ =============================== */
+ @media  (max-width: 1200px) {
+   .header_content> h1  {
+		font-size: 45px;
+   }
+ }
+@media  (max-width: 1024px) {
+	.header_content> h1  {
+		font-size: 35px;
+   }
+   .wrapper {
+      margin-top: 120px;
+   }
+   .wrapper_main {
+      margin-top: 100px;
+   }
+   .wrapper_main {
+      flex-direction: column;
+      align-items: center;
+   }
+   .wrapper_item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 30px;
+   }
+   .wrapper_text> p {
+      padding-right: 0px;
+      width: 70%;
+      margin: 0 auto;
+   }
+   .wrapper_item> img {
+      margin: 0;
+   }
+   .tablet> img {
+      left: -340px;
+  }
+  .emaile {
+   width: 300px;
+   height: 300px;
+  }
+  .emaile> form> textarea{
+   max-width: 50%;
+   min-height: 50%;
+   min-height: 60px;
+   max-height: 60px;
+   margin-bottom: 10px;
+  }
+  .emaile> form> input {
+   max-width: 50%;
+   min-height: 50%;
+   min-height: 30px;
+   max-height: 30px;
+  }
+  .emaile> form> button {
+   width: 50px;
+   height: 50px;
+   margin-bottom: 0;
+  }
+}
+
+@media  (max-width: 800px) {
+   .header_content> h1  {
+		font-size: 25px;
+   }
+   header.header {
+      min-height: 600px;
+   }
+   .wrapper_main {
+      flex-direction: column;
+      margin: 20px 0;
+   }
+   .wrapper_item {
+      width: 70%;
+      margin: 0 auto;
+      padding-bottom: 50px;
+      text-align: center;
+      padding-left: 0px;
+   }
+   .content_block {
+      width: 90%;
+      padding-top: 0;
+   }
+   .content_block> h3 {
+      margin: 50px 0 50px;
+      line-height: 1;
+   }
+   .content_block> img {
+      display: none;
+   }
+   .tablet>p {
+      padding-left: 0;
+   }
+}
+@media  (max-width: 375px) {
+   .content_block> h3 {
+      font-size: 25px;
+      margin: 40px 0 30px;
+      line-height: 1;
+   }
+   .wrapper_text> p {
+      width: 100%;
+  }
+  .footer_p {
+   font-size: 12px;
+   line-height: 4;
+  }
+}
+
